@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body class="container">
+    <div class="">
+        <div class="button p-5 text-center" onclick="addnewNote()"><i class="fas fa-plus-circle fa-3x"></i></div>
+        <div id="note" class="note shadow" >
+            <div style="border-radius: 0 !important; border: 0;" class="card text-center">              
+                    <div class="card-header" style="display: inline-block !important;">
+                       <span onclick="delNote()" ><i class="fas fa-trash-alt"></i></span>
+                       <span onclick="switchIt()" style="margin-right: .5rem;"><i class="fas fa-pencil-alt"></i></span onclick="editNote()">
+                        <div id="dateC" style="display: inline-block; float: left;" class="text-muted">
+                            
+                        </div>
+                    </div>
+                    <!-- <div onmouseout="run()" id="sourceTA" class="card-body" contenteditable="true">
+                        
+                    </div> -->
+                    <textarea onmouseout="run()" id="sourceTA" class="card-body"></textarea>
+                    <div onclick="switchIt()" id="targetDiv" class="card-body">
+
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> -->
+    <script src="node_modules/showdown/dist/showdown.min.js"></script>
+    <script src="app.js"></script>
+    <!-- <script>
+      document.getElementById('content').innerHTML = marked('# Marked in the browser\n\n\n\nRendered by **marked**.The *catmeow*');
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,10 @@
+.note {
+    margin-bottom: 2.5rem;
+}
+.card-header span {
+    float: right;
+}
+#sourceTA {
+    border: none;
+    height: 100%;
+}
